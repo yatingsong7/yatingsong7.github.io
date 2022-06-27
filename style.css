@@ -3,27 +3,34 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 35px;
+  text-align: center;
 }
 
 section {
-  padding: 130px 20% 80px;
+  padding: 80px 20% 80px;
+}
+
+section:nth-child(odd) {
+  background-color: #e8f6ef;
+}
+
+section:nth-child(even) {
+  background-color: #ffffff;
 }
 
 h1 {
   font-family: "Pacifico", cursive, sans-serif;
   font-size: 4rem;
-  text-align: center;
 }
+
 h2 {
   color: #2f86a6;
   font-weight: 700;
-  text-align: center;
 }
 
-h4 {
-  font-size: 1.5rem;
+h3 {
+  font-size: 2rem;
   margin: 60px auto;
-  text-align: center;
 }
 
 h6 {
@@ -99,8 +106,7 @@ main {
 
 /* profile section */
 #aboutme {
-  background-color: #ffffff;
-  text-align: center;
+  padding-top: 130px;
 }
 
 #aboutme p {
@@ -109,7 +115,6 @@ main {
 
 /* project section */
 .card {
-  background-color: #e8f6ef;
   margin-top: 80px;
 }
 
@@ -124,7 +129,6 @@ main {
 /* practices section */
 #practice {
   margin: 20px 20px 80px;
-  text-align: center;
 }
 
 #practice .row {
@@ -147,10 +151,6 @@ main {
 }
 
 /* skill section */
-#skills {
-  background-color: #ffffff;
-}
-
 #skills .bi {
   color: #2f86a6;
 }
@@ -179,26 +179,27 @@ main {
 }
 
 /* Education section */
-#education {
-  background-color: #ffffff;
+#education div {
+  text-align: left;
+}
+/* contact section */
+#contact,
+footer h2,
+footer a {
+  color: #fef9ef;
 }
 
-/* contact section */
 footer {
   background-color: #2e4c6d;
   padding: 40px 0 60px;
-  text-align: center;
-  color: #fef9ef;
 }
 
 footer h2 {
   font-family: "Pacifico", cursive, sans-serif;
   padding: 50px 0;
-  color: #fef9ef;
 }
 
 footer a {
-  color: #fef9ef;
   text-decoration: none;
 }
 
