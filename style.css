@@ -50,7 +50,7 @@ main {
 #header {
   height: 100vh;
   width: 100%;
-  background: url(images/try.jpeg) no-repeat fixed center;
+  background: url(images/bg.jpeg) no-repeat fixed center;
   background-size: cover;
 }
 
@@ -219,6 +219,7 @@ footer a:hover {
   display: grid;
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   justify-items: center;
+  position: relative;
 }
 
 div#carousel {
@@ -227,7 +228,7 @@ div#carousel {
   width: 120%;
   height: 500px;
   display: flex;
-  padding-top: 20px;
+  padding-top: 40px;
   justify-content: center;
   overflow: hidden;
   transform-style: preserve-3d;
@@ -241,7 +242,6 @@ div#carousel {
 div.item {
   position: absolute;
   width: 400px;
-  height: 300px;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
@@ -256,14 +256,29 @@ div.item h6 {
 
 div.item small {
   display: block;
-  padding: 0 40px;
+  padding: 0 20px;
+}
+
+.demo-link {
+  position: absolute;
+  text-decoration: none;
+  top: 20px;
+  z-index: 100000;
+  display: none;
 }
 
 div.practice-img {
+  position: relative;
+  z-index: 500;
   width: 400px;
   height: 300px;
   background: no-repeat fixed center;
   background-size: cover;
+  border: #e8f6ef 10px solid;
+  border-radius: 15px;
+}
+
+div.practice-img:hover {
   border: #e8f6ef 10px solid;
   border-radius: 15px;
 }
@@ -282,7 +297,6 @@ div.item:nth-of-type(4) {
 }
 div.item:nth-of-type(5) {
   --offset: 5;
-  background-color: #e9ff70;
 }
 
 input:nth-of-type(1) {

@@ -21,10 +21,13 @@ $("div.item small").hide();
 var id = $("input:checked").attr("id");
 var newId = id - 1;
 $("div.item:eq(" + newId + ") small").show();
+$(".demo-link:eq(" + newId + ")").show();
 
 function displayContent(radio) {
   $("div.item small").hide();
+  $(".demo-link").hide();
   var id = $("input:checked").attr("id");
   var newId = id - 1;
   $("div.item:eq(" + newId + ") small").show();
+  $(".demo-link:eq(" + newId + ")").show();
 }
