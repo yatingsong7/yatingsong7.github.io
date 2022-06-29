@@ -138,7 +138,7 @@ main {
 .skill-name {
   float: left;
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
   padding-top: 10px;
   clear: both;
 }
@@ -147,7 +147,7 @@ main {
   display: block;
   font-size: 20px;
   text-align: right;
-  margin-right: 40px;
+  margin-right: 20px;
   padding-top: 10px;
 }
 
