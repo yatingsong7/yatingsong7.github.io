@@ -187,6 +187,7 @@ footer h2 {
 
 footer a {
   text-decoration: none;
+  margin: 0 50px;
 }
 
 footer a:hover {
