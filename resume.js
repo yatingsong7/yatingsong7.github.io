@@ -14,16 +14,15 @@ $(".nav-link").click(function () {
 
 if ($("input").is(":checked")) {
   var id = $("input:checked").attr("id");
-  console.log($("input:checked").attr("id"));
-  // $("div.item").eq()
 }
+
 $("div.item small").hide();
 var id = $("input:checked").attr("id");
 var newId = id - 1;
 $("div.item:eq(" + newId + ") small").show();
 $(".demo-link:eq(" + newId + ")").show();
 
-function displayContent(radio) {
+function displayContent() {
   $("div.item small").hide();
   $(".demo-link").hide();
   var id = $("input:checked").attr("id");
