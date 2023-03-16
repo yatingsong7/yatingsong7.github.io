@@ -10,20 +10,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
-    />
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -36,7 +31,7 @@
     <section id="header">
       <div class="container">
         <h1>Bella Song</h1>
-        <h3>IT Graduate ✤ Software Developer</h3>
+        <h3>Software Developer ✤ IT Graduate</h3>
       </div>
       <a href="#"><i class="bi bi-chevron-down"></i></a>
     </section>
@@ -53,14 +48,10 @@
             data-bs-target="#collapseNav"
             aria-controls="collapseNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="collapseNav"
-          >
+          <div class="collapse navbar-collapse justify-content-end" id="collapseNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#aboutme">Profile</a>
@@ -81,11 +72,7 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="btn btn-sm btn-light"
-                  type="button"
-                  href="file/Resume_BellaSong.pdf"
-                >
+                <a class="btn btn-sm btn-light" type="button" href="file/Resume_BellaSong.pdf">
                   <i class="bi bi-download"></i> PDF Resume
                 </a>
               </li>
@@ -98,13 +85,11 @@
       <section id="aboutme">
         <h2>Hello, I'm Bella</h2>
         <p>
-          I graduated from RMIT University in 2022, majoring in Information
-          Technology. I enjoy learning new knowledge, solving problems and
-          optimising my projects. For me, programming is not just about code,
-          but it is a beautiful world. Every project holds our creativity and
-          thought, and these projects completely change our life. So I am
-          totally hooked into this world and I am diving into it with my
-          passion.
+          I graduated from RMIT University with a Master's degree in Information Technology in 2022. I am a software
+          developer now, developing both web and mobile applications. I enjoy learning new knowledge, solving problems and
+          optimising my projects. For me, application development is not just about coding, but it creates a beautiful world.
+          Every project holds our creativity and thoughts, and these projects completely change our life. So I am totally
+          hooked into this world and I am diving into it with my passion.
         </p>
       </section>
 
@@ -119,60 +104,90 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Coachwise Application</h5>
-                <p class="card-text">
-                  <ul>
-                    <li>
-                      A training system that includes a web application written by React and a mobile application by React Native. The backend is using Node.
-                    </li>
-                    <li>
-                      The web application can manage clients, search exercises and chat with clients.
-                    </li>
-                    <li>
-                      The mobile application can manage training sessions, search exercises and chat with coaches.
-                    </li>
-                    <li>
-                      The user can send text messages and also record voice messages in the chat panel on both ends.
-                    </li>
-                    <li>
-                      Google Firebase Authentication and Firestore is used to securely save users' data.
-                    </li>
-                  </ul> 
-                </p>
-                <small><i>Because of company's confidential reason, the code and demo of this project cannot be provided</i></small>
+                <ul>
+                  <li>
+                    A training system that includes a web application written by React and a mobile application by React
+                    Native. The backend APIs are built by Node, MariaDB and TypeScript. The applications are deployed on AWS.
+                  </li>
+                  <li>
+                    The web application can manage clients, create training plans for clients and view clients' training
+                    history, and create training programs for other coaches to copy and edit.
+                  </li>
+                  <li>
+                    The mobile application is for clients to view their training plans and give feedbacks to coaches. The
+                    home screen will show the upcoming exercises. Every exercise in plans has embedded Youtube video.
+                  </li>
+                  <li>The user can send text messages and also record voice messages in the chat panel on both ends.</li>
+                  <li>Google Firebase Authentication and Firestore is used to securely save users' data.</li>
+                </ul>
+                <small><i>Because of company's confidential reason, the code of this project cannot be provided</i></small>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="card border-0">
+
+        <div class="card border-0">
           <div class="row g-0">
             <div class="col-md-4">
-              <img
-                src="images/p3.jpg"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
+              <img src="images/taskManage.png" class="img-fluid rounded-start" />
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Gardening Online Shopping Website</h5>
+                <h5 class="card-title">Task Management</h5>
+                <ul>
+                  <li>
+                    A simple web-based task management project built with React, Node, TypeScript and MySQL. Backend is
+                    structured in MVC and communicates with database through typeORM. Both ends use strict types to make data
+                    type safe.
+                  </li>
+                  <li>
+                    Users can create tasks, view all tasks, change the status of a task and see the counts of tasks based on
+                    different status. Any input errors or API call failed will show error information on the screen.
+                  </li>
+                  <li>Material UI makes the interface styles consistent and user-friendly.</li>
+                  <li>
+                    This is a scalable and maintainable project with reusable components and well-structured REST APIs.
+                  </li>
+                </ul>
                 <p class="card-text">
-                  An online shopping website selling gardening goods, which
-                  supports operations of browsing items, viewing one item,
-                  zooming in and out images for details, adding shopping carts,
-                  managing accounts and viewing wish lists. Using JavaScript...
-                </p>
-                <p class="card-text">
-                  <a href="#" class="text-muted"
-                    >View Demo<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    >View Code<i class="bi bi-arrow-up-right"></i
+                  <a href="https://github.com/yatingsong7/Task-management-project" class="text-muted"
+                    >See details<i class="bi bi-arrow-up-right"></i
                   ></a>
                 </p>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+
+        <div class="card border-0">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/garden.png" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Gardening Online Shopping Website</h5>
+                <ul>
+                  <li>An online shopping web application built by React 18 and Firebase.</li>
+                  <li>
+                    Users are able to browse items by categories, view one item and add to shopping carts, manage accounts
+                    and pay through Stripe API.
+                  </li>
+                  <li>
+                    The project uses React Context to manage cart and user states centrally to reduce the number of data
+                    fetch and to keep data up-to-date in every component
+                  </li>
+                </ul>
+                <p class="card-text">
+                  <a href="https://github.com/yatingsong7/timone-garden" class="text-muted"
+                    >See details<i class="bi bi-arrow-up-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="card border-0">
           <div class="row g-0">
             <div class="col-md-4">
@@ -181,125 +196,99 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Online Banking System</h5>
-                <p class="card-text"> 
-                  <ul>
-                    <li>
-                      A typical three-tiered C# web application using .NET Core and EF framework.
-                    </li>
-                    <li>
-                      Log-in users can check their credit and debit account balance, deposit online and schedule bill payments. 
-                      Transaction history can also be displayed online. 
-                    </li>
-                    <li>
-                      Bill pays can be scheduled monthly, quarterly, annually, or on a specific date, as a one-off payment, 
-                      and can be modified at any time. The pays will be automatically executed unless there is insufficient amount 
-                      in the account.
-                    </li>
-                  </ul>
-                </p>
-                <!-- <p class="card-text">
-                  <a href="#" class="text-muted"
-                    >View Demo<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    >View Code<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </p> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card border-0">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/Airbnb.png" class="img-fluid rounded-start" />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Airbnb Lite</h5>
+                <ul>
+                  <li>A typical three-layer C# web application using .NET Core and EF framework.</li>
+                  <li>
+                    Log-in users can check their credit and debit account balance, deposit online and schedule bill payments.
+                    Transaction history can also be displayed online.
+                  </li>
+                  <li>
+                    Bill pays can be scheduled monthly, quarterly, annually, or on a specific date, as a one-off payment, and
+                    can be modified at any time. The pays will be automatically executed unless there is insufficient amount
+                    in the account.
+                  </li>
+                </ul>
                 <p class="card-text">
-                  <ul>
-                    <li>
-                      A two-layer Java-based web application communicated with
-                      MongoDB.
-                    </li>
-                    <li>
-                      Using more than 5000 documents in sample Airbnb data
-                      in MongoDB, this app supports searching with various
-                      combinations of conditions and respond in a quick manner.
-                    </li>
-                    <li>
-                      Users can search, view results lists and view one
-                      accommodation. Log-in users can manage their reviews.
-                    </li>
-                  </ul>
+                  <a href="https://github.com/yatingsong7/online-bank-system" class="text-muted"
+                    >See details<i class="bi bi-arrow-up-right"></i
+                  ></a>
                 </p>
-                <!-- <p class="card-text">
-                  <a href="#" class="text-muted"
-                    >View Demo<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a href="#" class="text-muted"
-                    >View Code<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </p> -->
               </div>
             </div>
           </div>
         </div>
-       
+
         <!-- other projects -->
         <div id="practice">
           <h2>My Personal Practices</h2>
-          <div id="practice-container">        
-            <a href="https://yatingsong7.github.io/2048" class="text-muted demo-link"><i>demo &#8599</i></a>
-            <a href="https://yatingsong7.github.io/Simon-game" class="text-muted demo-link"><i>demo &#8599</i></a>
-            <a href="https://github.com/yatingsong7/web_practices.git" class="text-muted demo-link"><i>code &#8599</i></a>
-            <input id="1" type="radio" name="position" onclick="displayContent(this)"/>
-            <input id="2" type="radio" name="position" onclick="displayContent(this)"/>
+          <div id="practice-container">
+            <span class="demo-link">
+              <a href="https://github.com/yatingsong7/2048" class="text-muted">Code</a>
+              &nbsp
+              <a href="https://yatingsong7.github.io/2048" class="text-muted">Demo</a>
+            </span>
+            <span class="demo-link">
+              <a href="https://github.com/yatingsong7/Simon-game" class="text-muted">Code</a>
+              &nbsp
+              <a href="https://yatingsong7.github.io/Simon-game" class="text-muted">Demo</a>
+            </span>
+            <span class="demo-link">
+              <a href="https://github.com/yatingsong7/web_practices.git" class="text-muted">Code</a>
+              &nbsp
+              <a href="https://projects-practice.netlify.app/" class="text-muted">Demo</a>
+            </span>
+
+            <input id="1" type="radio" name="position" onclick="displayContent(this)" />
+            <input id="2" type="radio" name="position" onclick="displayContent(this)" />
             <input id="3" type="radio" name="position" onclick="displayContent(this)" checked />
-            <input id="4" type="radio" name="position" onclick="displayContent(this)"/>
-            <input id="5" type="radio" name="position" onclick="displayContent(this)"/>
-            
-            <div id="carousel">  
-              <div class="item">                
-                <div class="practice-img" style="background-image: url(images/2048.png);"></div>
+            <input id="4" type="radio" name="position" onclick="displayContent(this)" />
+            <input id="5" type="radio" name="position" onclick="displayContent(this)" />
+            <small class="notice">Click here to scroll</small>
+
+            <div id="carousel">
+              <div class="item">
+                <div class="practice-img" style="background-image: url(images/2048.png)"></div>
                 <h6>Game 2048</h6>
-                <small>&#x2022; JS, HTML, CSS<br />                 
+                <small
+                  >&#x2022; JS, HTML, CSS<br />
                   A single-player web-based game operated by arrow keys.
                 </small>
               </div>
 
               <div class="item">
-                <div class="practice-img" style="background-image: url(images/Simon.png);"></div>
-                <h6>Simon Game</h6>               
-                <small>&#x2022; JQuery, HTML, CSS<br />
+                <div class="practice-img" style="background-image: url(images/Simon.png)"></div>
+                <h6>Simon Game</h6>
+                <small
+                  >&#x2022; JQuery, HTML, CSS<br />
                   A memory game with a series of tones and animation effects.
-                </small>             
-              </div>
-              <div class="item">
-                <div class="practice-img" style="background-image: url(images/JSGroup.png);"></div>
-                <h6>JS Practices</h6>
-                <small>&#x2022; HTML, JavaScript, CSS<br />
-                  20 small projects that can be used in web applications.
-                </small> 
-              </div>  
-              <div class="item">
-                <div class="practice-img" style="background-image: url(images/Blog.png);"></div>
-                <h6>Blogs</h6>
-                <small>&#x2022; Node.js, Express, MongoDB<br />
-                  A simple blog app that can compose journal, list all journals and view one blog.
-                </small> 
-              </div>
-              <div class="item">
-                <div class="practice-img" style="background-image: url(images/Todo.png);"></div>
-                <h6>To-do List</h6>               
-                <small>&#x2022; Node.js, Express, MongoDB<br />
-                  A to-do app that can add today's new item and tick items off.
                 </small>
               </div>
-
-              
-            <div>
+              <div class="item">
+                <div class="practice-img" style="background-image: url(images/JSGroup.png)"></div>
+                <h6>Web Widgets Practice</h6>
+                <small
+                  >&#x2022; HTML, JavaScript, CSS<br />
+                  Widgets that can be used in web applications.
+                </small>
+              </div>
+              <div class="item">
+                <div class="practice-img" style="background-image: url(images/Airbnb.png)"></div>
+                <h6>Airbnb Lite</h6>
+                <small
+                  >&#x2022; Java, MongoDB, ThymeLeaf<br />
+                  A two-layer Java-based web application communicated with MongoDB. Users can search, view results lists and
+                  view one accommodation. Log-in users can manage their reviews.
+                </small>
+              </div>
+              <div class="item">
+                <div class="practice-img" style="background-image: url(images/Blog.png)"></div>
+                <h6>Blogs</h6>
+                <small
+                  >&#x2022; Node.js, Express, MongoDB<br />
+                  A simple blog app that can compose journal, list all journals and view one blog.
+                </small>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -341,7 +330,17 @@
                 </span>
               </div>
               <div class="skill">
-                <span class="skill-name">SQL</span>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-score">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <div class="skill">
+                <span class="skill-name">TypeScript</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -361,7 +360,17 @@
                 </span>
               </div>
               <div class="skill">
-                <span class="skill-name">JavaScript</span>
+                <span class="skill-name">Express</span>
+                <span class="skill-score">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+              <div class="skill">
+                <span class="skill-name">SQL</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -381,7 +390,7 @@
                 </span>
               </div>
               <div class="skill">
-                <span class="skill-name">OOP</span>
+                <span class="skill-name">Material UI</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -390,6 +399,8 @@
                   <i class="bi bi-star-fill"></i>
                 </span>
               </div>
+            </div>
+            <div class="col-lg-6">
               <div class="skill">
                 <span class="skill-name">Agile</span>
                 <span class="skill-score">
@@ -401,7 +412,7 @@
                 </span>
               </div>
               <div class="skill">
-                <span class="skill-name">UML</span>
+                <span class="skill-name">Git</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -410,8 +421,16 @@
                   <i class="bi bi-star-fill"></i>
                 </span>
               </div>
-            </div>
-            <div class="col-lg-6">
+              <div class="skill">
+                <span class="skill-name">OOP</span>
+                <span class="skill-score">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </span>
+              </div>
               <div class="skill">
                 <span class="skill-name">Firebase</span>
                 <span class="skill-score">
@@ -463,42 +482,11 @@
                 </span>
               </div>
               <div class="skill">
-                <span class="skill-name">PHP</span>
-                <span class="skill-score">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                </span>
-              </div>
-
-              <div class="skill">
                 <span class="skill-name">Algorithms</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
                   <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                </span>
-              </div>
-              <div class="skill">
-                <span class="skill-name">GraphQL</span>
-                <span class="skill-score">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                </span>
-              </div>
-              <div class="skill">
-                <span class="skill-name">Express</span>
-                <span class="skill-score">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                 </span>
@@ -507,7 +495,7 @@
                 <span class="skill-name">AWS</span>
                 <span class="skill-score">
                   <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
@@ -529,41 +517,34 @@
               <p class="text-muted">Mar 2022 - Current</p>
             </div>
             <div class="col-8">
-              <strong>Developer Intern</strong>
+              <strong>Software Developer</strong>
               <p>
-                JPS is the Melbourne's best personal training company, located
-                at Airport West. They provide personal training sessions
-                in-person and online with hundreds of customers worldwide. So in
-                order to manage so many customers efficiently, the company
-                developed their own web app and mobile app.
+                JPS is the Melbourne's best personal training company, located at Airport West. They provide personal
+                training sessions in-person and online with hundreds of customers worldwide. So in order to manage so many
+                customers efficiently, the company decided to develop their own system.
               </p>
               <p>
-                I was assigned to JPS for my capstone project since March 2022.
-                During semester, I worked with other three teammates to
-                implement chat functionality in existing apps. After graduation,
-                I was hired by them as a casual software developer since June,
-                to optimize and maintain the code and develop more functions.
+                I was assigned to JPS for my capstone project since March 2022. During semester, I worked with other three
+                teammates to implement chat functionality in existing apps. After graduation, I was hired by them as a
+                contract software developer, to develop more functions, rebuild the whole mobile application, manage APIs and
+                maintain existing code.
               </p>
               Key contributions:
               <ul>
+                <li>Built reusable React and React Native components;</li>
                 <li>
-                  Build reusable React component; Wrote code for core parts of
-                  text and voice chat functions; Created real-time updates when
-                  data change
+                  Introduced Google Firestore to the company; Analyzed reading and writing times and designed a database
+                  structure that reduces CRUD times, saves money and increases efficiency
+                </li>
+                <li>Created UI templates that followed market conventions and company's needs</li>
+                <li>Used React Context and optimized backend functions to reduce 30% of API calls</li>
+                <li>
+                  Participated in full stack development process for features reaching over 300 users including overseas
+                  users and got positive feedback
                 </li>
                 <li>
-                  Introduced Google Firestore to the company; Analyzed reading
-                  and writing times and designed a database structure that
-                  reduces CRUD times, saves money and increases efficiency
-                </li>
-                <li>
-                  Created UI templates that followed market conventions and
-                  company's needs
-                </li>
-                <li>
-                  As the project leader in capstone, led our team to be the best
-                  of 12 teams; Managed sprint tasks and assigned duties to
-                  teammates based on their capacities and preference.
+                  During capstone, as the project leader, led our team to be the best of 12 teams; Managed sprint tasks and
+                  assigned duties to teammates based on their capacities and preference.
                 </li>
               </ul>
             </div>
@@ -579,18 +560,31 @@
             <div class="col-4">
               <strong>RMIT University</strong>
               <p class="text-muted">March 2020 - June 2022</p>
+              <b><i>GPA 3.5/4.0</i></b>
             </div>
             <div class="col-8">
               <strong>Master of Information Technology</strong>
               <p>
-                RMIT really stimulates my interest in software development. It
-                provided many opportunities for individual practices and team
-                work. The core courses were mainly Java-based programming but I
-                also learned JavaScript, SQL and no-SQL, C# and pracitced my
-                React skills in Capstone. Some courses such as Object-oriented
-                Design and Usability Engineering made me think about how to
-                write clean code and how to make my projects looked elegant by
-                customers.
+                RMIT really encourages me to delve into software development. It provided many opportunities for individual
+                practices and team works. The core courses were mainly Java-based programming but I also learned JavaScript,
+                SQL and no-SQL, C# and developed my React skills in Capstone. Some courses such as Object-oriented Design and
+                Usability Engineering led me to think how to write clean and maintainable code and how to design
+                user-friendly interface.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <strong>Udemy</strong>
+              <p class="text-muted">Online</p>
+            </div>
+            <div class="col-8">
+              <strong>TypeScript Complete Course - Beginner to Advancer </strong>
+              <p>
+                This course helped me build complete and in-depth knowledge about TypeScript, and also teached me how to use
+                TypeScript in conjunction with other technologies such as React, Node, TypeORM and MySQL. Its project gave me
+                practical hands-on experience on building a type safe application and writing Object Oriented code with a
+                bunch of features that TypeScript provides.
               </p>
             </div>
           </div>
@@ -602,10 +596,9 @@
             <div class="col-8">
               <strong>The Complete 2022 Web Development Bootcamp</strong>
               <p>
-                This is a fantastic online course covering all basic knowledge
-                of becoming a full-stack web developer. I learnt detailed HTML,
-                CSS, JS, Node and React. The greatest part is that I practiced
-                what I learnt by more than 20 small projects during this course.
+                This is a fantastic online course covering all basic knowledge of becoming a full-stack web developer. I
+                learnt HTML, CSS, JS and Node in deep. The greatest part is that I practiced by more than 20 small projects
+                during this course.
               </p>
             </div>
           </div>
@@ -617,12 +610,9 @@
             <div class="col-8">
               <strong>The Complete React Developer in 2022 </strong>
               <p>
-                Using the latest version of React (React 18), this project-based
-                course introduced me to all modern toolchain of React along with
-                a MERN stack application. Through this course, I not only
-                learned principles but also challenge myself to think about
-                design patterns, project performance, how to structure folders
-                and how to organize code.
+                Using the latest version of React (React 18), this project-based course introduced me to all modern toolchain
+                of React along with a MERN stack application. Through this course, I not only learned principles but also
+                challenge myself to think about project performance, how to structure folders and how to organize code.
               </p>
             </div>
           </div>
@@ -632,28 +622,16 @@
       <!-- Footer --- Contact info -->
       <footer id="contact">
         <h2>Let's keep in touch !</h2>
-        <a href="mailto:yatingsong7@gmail.com"
-          ><i class="bi bi-envelope-fill"></i> &nbsp yatingsong7@gmail.com</a
-        >
-        
-        <a href="https://www.linkedin.com/in/yating-song-84a4131a6"
-          ><i class="bi bi-linkedin"></i> &nbsp LinkedIn</a
-        >
-        <br /><br />
-        <!-- <a>
-          If you wish to view code for this portfolio, please click
-          <a href="https://github.com/yatingsong7/yatingsong7.github.io.git"
-            ><i>Here</i></a
-          >
-          to my Github.
-        </a> -->
+        <a href="mailto:yatingsong7@gmail.com"><i class="bi bi-envelope-fill"></i> &nbsp yatingsong7@gmail.com</a>
+        <a href="https://www.linkedin.com/in/yating-song-84a4131a6"><i class="bi bi-linkedin"></i> &nbsp LinkedIn</a>
+        <a href="https://github.com/yatingsong7"><i class="bi bi-github"></i> &nbsp Github</a>
       </footer>
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="resume.js"></script>
   </body>
