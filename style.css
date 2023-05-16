@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  padding: 80px 20%;
+  padding: 80px 20% 60px;
 }
 
 section:nth-child(even) {
@@ -52,10 +52,11 @@ main {
   width: 100%;
   background: url(images/bg.jpeg) no-repeat fixed center;
   background-size: cover;
+  cursor: pointer;
 }
 
 #header .container {
-  margin-top: 120px;
+  margin-top: 4rem;
 }
 
 #header img {
@@ -63,15 +64,8 @@ main {
   height: auto;
 }
 
-#header a .bi {
-  position: absolute;
-  bottom: 0;
-  right: 30px;
-  font-size: 2rem;
-  color: #e8f6ef;
-  background-color: black;
-  padding: 20px 30px 10px 30px;
-  border-radius: 20px 20px 0 0;
+#header .name {
+  margin-bottom: 40px;
 }
 
 /* navbar */
@@ -80,12 +74,12 @@ main {
   width: 100%;
   background-color: #2e4c6d;
   z-index: 1;
-  padding: 10px 20px;
+  padding: 4px 10px;
 }
 
 .navbar a {
   color: white;
-  margin: 5px 10px;
+  margin: 5px 5px;
 }
 
 .navbar a:hover {
@@ -107,7 +101,7 @@ main {
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* profile section */
@@ -120,6 +114,10 @@ main {
 }
 
 /* project section */
+section#projects {
+  padding-bottom: 100px;
+}
+
 .card {
   margin-top: 80px;
   background-color: #e8f6ef;
@@ -224,7 +222,7 @@ footer a:hover {
 }
 
 #practice-container {
-  height: 500px;
+  height: 480px;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
@@ -351,7 +349,7 @@ input:nth-of-type(5):checked ~ div#carousel {
 .notice {
   display: block;
   position: absolute;
-  bottom: -40px;
+  bottom: -60px;
   font-size: 12px;
   font-style: italic;
 }
