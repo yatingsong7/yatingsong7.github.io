@@ -144,10 +144,10 @@ section#projects {
 }
 
 .skill-name {
-  float: left;
+  /* float: left; */
   font-size: 18px;
   padding: 3px;
-  clear: both;
+  /* clear: both; */
 }
 
 .skill-score {
