@@ -47,17 +47,18 @@ h6 {
 
 main {
   display: none;
-}
+}*/
 
-.container {
-} */
+section {
+  padding: 60px 50px 60px;
+}
 
 .yellow-hr {
   border: 2px solid var(--accent-color);
   width: 80%;
   opacity: 1;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin: 2px 0px;
 }
 
@@ -67,9 +68,16 @@ main {
   border: 2px solid var(--main-color);
   width: 80%;
   opacity: 1;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   margin: 2px 0px;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  border-radius: 50%;
 }
 
 /* header section */
@@ -84,7 +92,7 @@ main {
 
 #header .introduction {
   position: absolute;
-  top: 220px;
+  top: 260px;
   left: 60px;
 }
 
@@ -198,46 +206,40 @@ main {
 } */
 
 /* skill section */
-/* #skills .bi {
-  color: #2f86a6;
+#skills {
+  background-color: var(--second-color);
 }
 
-#skill {
+#skills .skill {
+  font-weight: 700;
+}
+
+#skills .skill-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
+  margin: 20px 50px 10px;
 }
 
-.skill-name {
-  font-size: 18px;
-  padding: 3px;
+#skills .skill-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25%;
 }
-
-.skill-score {
-  display: block;
-  font-size: 18px;
-  text-align: right;
-  padding: 3px;
-}
-
-.skill:hover {
-  background-color: #f7f7f7;
-}
-
-.skill:hover .skill-score .bi {
-  margin-left: 3px;
-} */
 
 /* Working experience section */
-/* #work .container {
-  text-align: left;
-} */
-
-/* Education section */
-#education {
-  padding: 60px 40px 60px;
+#work .work-info {
+  display: flex;
+  justify-content: space-between;
 }
 
+#work .card-body {
+  text-align: left;
+  padding: 0px;
+}
+
+/* Education section */
 #education .card {
   background-color: var(--second-color);
   padding: 10px 0px 0px;
@@ -254,13 +256,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-
-#education .education-img {
-  width: 100px;
-  height: 100px;
-  align-self: center;
-  border-radius: 50%;
 }
 
 /* contact section */
