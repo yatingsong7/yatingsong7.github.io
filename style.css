@@ -1,6 +1,6 @@
 :root {
   --main-color: #15052b;
-  --second-color: #f8f5e4;
+  --second-color: #f7f7f7;
   --accent-color: #e4b143;
 }
 
@@ -51,6 +51,26 @@ main {
 
 .container {
 } */
+
+.yellow-hr {
+  border: 2px solid var(--accent-color);
+  width: 80%;
+  opacity: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 2px 0px;
+}
+
+.dark-hr {
+  float: right;
+  clear: both;
+  border: 2px solid var(--main-color);
+  width: 80%;
+  opacity: 1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 2px 0px;
+}
 
 /* header section */
 #header {
@@ -150,6 +170,14 @@ main {
   color: white;
 }
 
+#content-page.marginOff {
+  margin-top: 60px;
+}
+
+#specialize {
+  padding-top: 50px;
+}
+
 /* project section */
 /* section#projects {
   padding-bottom: 100px;
@@ -206,9 +234,34 @@ main {
 } */
 
 /* Education section */
-/* #education div {
-  text-align: left;
-} */
+#education {
+  padding: 60px 40px 60px;
+}
+
+#education .card {
+  background-color: var(--second-color);
+  padding: 10px 0px 0px;
+  transition: linear 0.2s;
+}
+
+#education .card:hover {
+  background-color: #e8e8e8;
+  transform: scale(1.03);
+  transition: linear 0.2s;
+}
+
+#education .education-card-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#education .education-img {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  border-radius: 50%;
+}
 
 /* contact section */
 #contact,
