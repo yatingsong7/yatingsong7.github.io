@@ -481,10 +481,11 @@ footer a:hover {
   #header .introduction {
     position: static;
     width: 80%;
-    margin: 130px auto 10px;
+    margin: 150px auto 10px;
   }
 
   #header .name {
+    margin-top: 20px;
     font-size: 30px;
     white-space: nowrap;
   }
