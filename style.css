@@ -186,12 +186,13 @@ section {
 .specialization {
   display: flex;
   align-items: center;
+  text-align: left;
 }
 
 .specialization .icon {
   background-color: var(--main-color);
   height: 70px;
-  width: 70px;
+  min-width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +335,6 @@ section {
 #skills .skill-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-around;
   margin: 30px 100px 0px;
 }
@@ -401,16 +401,83 @@ footer a:hover {
   color: var(--second-color);
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   section {
-  }
-  #practice .row {
-    margin: 30px 15% 20px;
-    text-align: center;
+    padding: 60px 10px;
   }
 
-  #projects {
-    text-align: center;
-    margin: 0 40px;
+  #second-spec {
+    padding-left: 0px;
   }
-} */
+
+  #third-spec {
+    padding-left: 0px;
+  }
+
+  #profiles {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  #first-profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  #second-profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  #third-profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  #work img {
+    margin-top: 20px;
+  }
+
+  #work .work-info {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  #skills .skill-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 12px;
+    margin: 30px 20px 0px;
+  }
+
+  #skills .skill-icon img {
+    place-self: center;
+  }
+}
